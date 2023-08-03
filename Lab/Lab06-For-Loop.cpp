@@ -16,10 +16,23 @@
         Series: 8 6 4 2 0
 */
 #include <stdio.h>
-
 int main() {
+    int N, I;
+    printf("Enter value: ");
+    scanf("%d", &N);
 
+    if (N %2 == 1) {
+        printf("Series: " );
+        for (I = 1; I <= N; I += 2) {
+            printf("%d ", I);
+        }
+    } else {
+        printf("Series: " );
+        for (I = N; I >= 0; I -= 2) {
+            printf("%d ", I);
+        }
+    }
     //--| YOUR CODE HERE
-
     return 0 ;
-}//end main function
+   
+    }//end main function
